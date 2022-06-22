@@ -3,6 +3,6 @@ module com.example.manager_hasel_fx {
     requires javafx.fxml;
 
 
-    opens com.example.manager_hasel_fx to javafx.fxml;
-    exports com.example.manager_hasel_fx;
+    opens com.example.tic_tac_toe_fx to javafx.fxml;
+    exports com.example.tic_tac_toe_fx;
 }
