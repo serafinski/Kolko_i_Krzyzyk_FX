@@ -20,7 +20,7 @@ public class Main extends Application {
         Group group = new Group(root);
         Scene scene = new Scene(group,600,600);
 
-        stage.setTitle("Ultimate Tic-Tac-Toe!");
+        stage.setTitle("Kółko i krzyżyk!");
 
         stage.setScene(scene);
         stage.show();

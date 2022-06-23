@@ -7,20 +7,15 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.SwitchSceneController">
    <children>
-      <Button layoutX="185.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="65.0" prefWidth="230.0" text="Play Original">
+      <Button layoutX="185.0" layoutY="268.0" mnemonicParsing="false" onAction="#switchToGame" prefHeight="65.0" prefWidth="230.0" text="Graj w grę!">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Button>
-      <Label layoutX="73.0" layoutY="43.0" text="Ultimate Tic-Tac-Toe">
+      <Label layoutX="138.0" layoutY="43.0" text="Kółko i krzyżyk!">
          <font>
             <Font name="System Italic" size="50.0" />
          </font>
       </Label>
-      <Button layoutX="185.0" layoutY="300.0" mnemonicParsing="false" onAction="#switchToUltimate" prefHeight="65.0" prefWidth="230.0" text="Play Ultimate">
-         <font>
-            <Font name="System Bold" size="30.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

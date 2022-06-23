@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.TicTacToeController">
    <children>
-      <Label layoutX="209.0" layoutY="14.0" text="Zaczyna krzyżyk!">
+      <Label fx:id="tekst" layoutX="209.0" layoutY="14.0" text="Zaczyna krzyżyk!">
          <font>
             <Font name="System Bold Italic" size="25.0" />
          </font>
@@ -29,20 +29,47 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="326.0" prefWidth="167.0" />
-                  <Button mnemonicParsing="false" prefHeight="167.0" prefWidth="380.0" GridPane.columnIndex="1" />
-                  <Button mnemonicParsing="false" prefHeight="278.0" prefWidth="166.0" GridPane.columnIndex="2" />
-                  <Button mnemonicParsing="false" prefHeight="396.0" prefWidth="167.0" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" prefHeight="269.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" prefHeight="305.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" prefHeight="179.0" prefWidth="167.0" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" prefHeight="295.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" prefHeight="338.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="przycisk7" mnemonicParsing="false" prefHeight="326.0" prefWidth="167.0">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk8" mnemonicParsing="false" prefHeight="167.0" prefWidth="380.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk9" mnemonicParsing="false" prefHeight="278.0" prefWidth="166.0" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk4" mnemonicParsing="false" prefHeight="396.0" prefWidth="167.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk5" mnemonicParsing="false" prefHeight="269.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk6" mnemonicParsing="false" prefHeight="305.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk1" mnemonicParsing="false" prefHeight="179.0" prefWidth="167.0" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk2" mnemonicParsing="false" prefHeight="295.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
+                  <Button fx:id="przycisk3" mnemonicParsing="false" prefHeight="338.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="80.0" />
+                     </font></Button>
                </children>
             </GridPane>
          </children>
       </AnchorPane>
-      <Button layoutX="51.0" layoutY="561.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="26.0" prefWidth="500.0" text="Wróć do menu głównego">
+      <Button fx:id="przyciskPowrotu" layoutX="51.0" layoutY="561.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="26.0" prefWidth="500.0" text="Wróć do menu głównego">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
