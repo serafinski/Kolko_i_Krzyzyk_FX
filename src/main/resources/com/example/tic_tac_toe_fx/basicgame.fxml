@@ -6,9 +6,10 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.TicTacToeController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.TicTacToeController">
    <children>
       <Label fx:id="tekst" layoutX="209.0" layoutY="14.0" text="Zaczyna krzyżyk!">
          <font>
@@ -74,5 +75,13 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
+      <Line fx:id="linia7" endX="488.5" endY="508.5" layoutX="55.0" layoutY="35.0" opacity="0.5" startX="1.5" startY="21.5" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia1" endX="482.0" layoutX="67.0" layoutY="126.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia2" endX="482.0" layoutX="67.0" layoutY="300.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia3" endX="482.0" layoutX="67.0" layoutY="466.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia4" endX="490.0" layoutX="-110.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia5" endX="490.0" layoutX="55.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia8" endX="490.0" endY="489.3427734375" layoutX="55.0" layoutY="50.0" opacity="0.5" rotate="90.0" startX="5.6575164794921875" startY="7.96759033203125" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia6" endX="490.0" layoutX="225.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
    </children>
 </AnchorPane>

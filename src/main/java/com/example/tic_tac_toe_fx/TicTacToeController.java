@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -53,6 +54,30 @@ public class TicTacToeController {
     @FXML
     private Label tekst;
 
+    @FXML
+    private Line linia1;
+
+    @FXML
+    private Line linia2;
+
+    @FXML
+    private Line linia3;
+
+    @FXML
+    private Line linia4;
+
+    @FXML
+    private Line linia5;
+
+    @FXML
+    private Line linia6;
+
+    @FXML
+    private Line linia7;
+
+    @FXML
+    private Line linia8;
+
     private int ktoryGracz = 0;
 
     private int ilerund = 0;
@@ -83,6 +108,7 @@ public class TicTacToeController {
 
     public void initialize(){
         przyciskPowrotu.setVisible(false);
+        niePokazujLinii();
         przyciski = new ArrayList<>(Arrays.asList(przycisk1,przycisk2,przycisk3,przycisk4,przycisk5,przycisk6,przycisk7,przycisk8,przycisk9));
 
         przyciski.forEach(przycisk -> {
@@ -110,7 +136,7 @@ public class TicTacToeController {
                     ustawPrzycisk(przycisk);
                     przycisk.setDisable(true);
                 });
-
+                rysujLinie(i);
                 tekst.setText("Wygrał krzyżyk!");
                 przyciskPowrotu.setVisible(true);
             }
@@ -120,7 +146,7 @@ public class TicTacToeController {
                         ustawPrzycisk(przycisk);
                         przycisk.setDisable(true);
                     });
-
+                    rysujLinie(i);
                     tekst.setText("Wygrało kółko!");
                     przyciskPowrotu.setVisible(true);
             }
@@ -129,6 +155,29 @@ public class TicTacToeController {
                 tekst.setText("REMIS!");
                 przyciskPowrotu.setVisible(true);
                 }
+        }
+    }
+
+    public void niePokazujLinii(){
+        linia1.setVisible(false);
+        linia2.setVisible(false);
+        linia3.setVisible(false);
+        linia4.setVisible(false);
+        linia5.setVisible(false);
+        linia6.setVisible(false);
+        linia7.setVisible(false);
+        linia8.setVisible(false);
+    }
+    public void rysujLinie(int i){
+        switch (i){
+            case 1 -> linia1.setVisible(true);
+            case 2 -> linia2.setVisible(true);
+            case 3 -> linia3.setVisible(true);
+            case 4 -> linia4.setVisible(true);
+            case 5 -> linia5.setVisible(true);
+            case 6 -> linia6.setVisible(true);
+            case 7 -> linia7.setVisible(true);
+            case 8 -> linia8.setVisible(true);
         }
     }
 }
