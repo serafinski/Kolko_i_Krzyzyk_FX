@@ -72,7 +72,7 @@ public class TicTacToeController {
         }
     }
 
-    public void ustawPrzyciski(Button przycisk){
+    public void ustawPrzycisk(Button przycisk){
         przycisk.setOnMouseClicked(mouseEvent -> {
             ustalSymbol(przycisk);
             przycisk.setDisable(true);
@@ -86,7 +86,7 @@ public class TicTacToeController {
         przyciski = new ArrayList<>(Arrays.asList(przycisk1,przycisk2,przycisk3,przycisk4,przycisk5,przycisk6,przycisk7,przycisk8,przycisk9));
 
         przyciski.forEach(przycisk -> {
-            ustawPrzyciski(przycisk);
+            ustawPrzycisk(przycisk);
             przycisk.setFocusTraversable(false);
         });
     }
@@ -95,7 +95,7 @@ public class TicTacToeController {
         for(int i=1; i < 9;i++){
             String linia = switch (i){
                 case 1 -> przycisk7.getText()+przycisk8.getText()+przycisk9.getText();
-                case 2 -> przycisk4.getText()+przycisk5.getText()+przycisk9.getText();
+                case 2 -> przycisk4.getText()+przycisk5.getText()+przycisk6.getText();
                 case 3 -> przycisk1.getText()+przycisk2.getText()+przycisk3.getText();
                 case 4 -> przycisk7.getText()+przycisk4.getText()+przycisk1.getText();
                 case 5 -> przycisk8.getText()+przycisk5.getText()+przycisk2.getText();
@@ -106,9 +106,8 @@ public class TicTacToeController {
             };
 
             if(linia.equals("XXX")){
-
                 przyciski.forEach(przycisk -> {
-                    ustawPrzyciski(przycisk);
+                    ustawPrzycisk(przycisk);
                     przycisk.setDisable(true);
                 });
 
@@ -118,7 +117,7 @@ public class TicTacToeController {
             else
                 if(linia.equals("OOO")){
                     przyciski.forEach(przycisk -> {
-                        ustawPrzyciski(przycisk);
+                        ustawPrzycisk(przycisk);
                         przycisk.setDisable(true);
                     });
 

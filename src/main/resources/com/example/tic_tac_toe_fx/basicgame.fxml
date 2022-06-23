@@ -31,39 +31,39 @@
                <children>
                   <Button fx:id="przycisk7" mnemonicParsing="false" prefHeight="326.0" prefWidth="167.0">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk8" mnemonicParsing="false" prefHeight="167.0" prefWidth="380.0" GridPane.columnIndex="1">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk9" mnemonicParsing="false" prefHeight="278.0" prefWidth="166.0" GridPane.columnIndex="2">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk4" mnemonicParsing="false" prefHeight="396.0" prefWidth="167.0" GridPane.rowIndex="1">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk5" mnemonicParsing="false" prefHeight="269.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk6" mnemonicParsing="false" prefHeight="305.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk1" mnemonicParsing="false" prefHeight="179.0" prefWidth="167.0" GridPane.rowIndex="2">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk2" mnemonicParsing="false" prefHeight="295.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                   <Button fx:id="przycisk3" mnemonicParsing="false" prefHeight="338.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <font>
-                        <Font size="80.0" />
+                        <Font size="75.0" />
                      </font></Button>
                </children>
             </GridPane>
