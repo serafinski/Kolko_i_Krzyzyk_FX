@@ -67,11 +67,6 @@
             </GridPane>
          </children>
       </AnchorPane>
-      <Button fx:id="przyciskPowrotu" layoutX="38.0" layoutY="551.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="26.0" prefWidth="500.0" text="Wróć do menu głównego">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Button>
       <Line fx:id="linia1" endX="473.0" layoutX="60.0" layoutY="129.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
       <Line fx:id="linia2" endX="473.0" layoutX="60.0" layoutY="296.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
       <Line fx:id="linia3" endX="473.0" layoutX="60.0" layoutY="463.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />

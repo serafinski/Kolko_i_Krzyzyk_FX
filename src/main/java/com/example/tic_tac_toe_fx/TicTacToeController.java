@@ -17,18 +17,6 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class TicTacToeController {
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-    public void switchToMenu(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("title_view.fxml")));
-        stage = (Stage)(((Node)e.getSource()).getScene().getWindow());
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
     @FXML
     private Button przycisk1;
     @FXML
@@ -47,10 +35,6 @@ public class TicTacToeController {
     private Button przycisk8;
     @FXML
     private Button przycisk9;
-
-    @FXML
-    private Button przyciskPowrotu;
-
     @FXML
     private Label tekst;
 
@@ -128,7 +112,6 @@ public class TicTacToeController {
     }
 
     public void initialize(){
-        przyciskPowrotu.setVisible(false);
         niePokazujLinii();
         przyciski = new ArrayList<>(Arrays.asList(przycisk1,przycisk2,przycisk3,przycisk4,przycisk5,przycisk6,przycisk7,przycisk8,przycisk9));
         stany = new ArrayList<>(Arrays.asList(klikniety1,klikniety2,klikniety3,klikniety4,klikniety5,klikniety6,klikniety7,klikniety8,klikniety9));
@@ -158,13 +141,9 @@ public class TicTacToeController {
                 przyciski.forEach(przycisk -> {
                     przycisk.setDisable(true);
                 });
-                stany.forEach(stan ->{
-                    stan = true;
-                });
 
                 rysujLinie(i);
                 tekst.setText("Wygrał krzyżyk!");
-                przyciskPowrotu.setVisible(true);
             }
             else
                 if(linia.equals("OOO")){
@@ -174,12 +153,10 @@ public class TicTacToeController {
                     });
                     rysujLinie(i);
                     tekst.setText("Wygrało kółko!");
-                    przyciskPowrotu.setVisible(true);
             }
             else
                 if (ilerund>9){
                 tekst.setText("REMIS!");
-                przyciskPowrotu.setVisible(true);
                 }
         }
     }
@@ -194,6 +171,7 @@ public class TicTacToeController {
         linia7.setVisible(false);
         linia8.setVisible(false);
     }
+
     public void rysujLinie(int i){
         switch (i){
             case 1 -> linia1.setVisible(true);
