@@ -48,10 +48,9 @@ public class TicTacToeController {
     @FXML
     private Text tekst;
 
-    private int ruchGracza;
+    private int ktoryGracz;
 
     ArrayList<Button> przyciski;
-
 
     public void initialize(){}
 }

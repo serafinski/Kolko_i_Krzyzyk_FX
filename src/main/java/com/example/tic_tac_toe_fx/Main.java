@@ -18,7 +18,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("title_view.fxml")));
         Group group = new Group(root);
-        Scene scene = new Scene(group,600,600, Color.BLACK);
+        Scene scene = new Scene(group,600,600);
 
         stage.setTitle("Ultimate Tic-Tac-Toe!");
 
