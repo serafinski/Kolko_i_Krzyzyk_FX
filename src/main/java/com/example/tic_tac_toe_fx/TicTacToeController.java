@@ -151,7 +151,7 @@ public class TicTacToeController {
                     przyciskPowrotu.setVisible(true);
             }
             else
-                if (ilerund>=9){
+                if (ilerund>9){
                 tekst.setText("REMIS!");
                 przyciskPowrotu.setVisible(true);
                 }

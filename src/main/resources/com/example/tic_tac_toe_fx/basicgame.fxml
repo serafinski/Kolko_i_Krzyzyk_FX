@@ -11,12 +11,12 @@
 
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.TicTacToeController">
    <children>
-      <Label fx:id="tekst" layoutX="209.0" layoutY="14.0" text="Zaczyna krzyżyk!">
+      <Label fx:id="tekst" layoutX="198.0" layoutY="14.0" text="Zaczyna krzyżyk!">
          <font>
             <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="500.0">
+      <AnchorPane layoutX="38.0" layoutY="45.0" prefHeight="500.0" prefWidth="500.0">
          <children>
             <GridPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <columnConstraints>
@@ -33,7 +33,8 @@
                   <Button fx:id="przycisk7" mnemonicParsing="false" prefHeight="326.0" prefWidth="167.0">
                      <font>
                         <Font size="75.0" />
-                     </font></Button>
+                     </font>
+                  </Button>
                   <Button fx:id="przycisk8" mnemonicParsing="false" prefHeight="167.0" prefWidth="380.0" GridPane.columnIndex="1">
                      <font>
                         <Font size="75.0" />
@@ -70,18 +71,18 @@
             </GridPane>
          </children>
       </AnchorPane>
-      <Button fx:id="przyciskPowrotu" layoutX="51.0" layoutY="561.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="26.0" prefWidth="500.0" text="Wróć do menu głównego">
+      <Button fx:id="przyciskPowrotu" layoutX="38.0" layoutY="551.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="26.0" prefWidth="500.0" text="Wróć do menu głównego">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Line fx:id="linia7" endX="488.5" endY="508.5" layoutX="55.0" layoutY="35.0" opacity="0.5" startX="1.5" startY="21.5" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia1" endX="482.0" layoutX="67.0" layoutY="126.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia2" endX="482.0" layoutX="67.0" layoutY="300.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia3" endX="482.0" layoutX="67.0" layoutY="466.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia4" endX="490.0" layoutX="-110.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia5" endX="490.0" layoutX="55.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia8" endX="490.0" endY="489.3427734375" layoutX="55.0" layoutY="50.0" opacity="0.5" rotate="90.0" startX="5.6575164794921875" startY="7.96759033203125" stroke="RED" strokeWidth="10.0" />
-      <Line fx:id="linia6" endX="490.0" layoutX="225.0" layoutY="300.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia1" endX="473.0" layoutX="60.0" layoutY="129.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia2" endX="473.0" layoutX="60.0" layoutY="296.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia3" endX="473.0" layoutX="60.0" layoutY="463.0" opacity="0.5" startX="-17.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia4" endX="490.0" layoutX="-123.0" layoutY="295.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia5" endX="490.0" layoutX="44.0" layoutY="295.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia6" endX="490.0" layoutX="211.0" layoutY="295.0" opacity="0.5" rotate="90.0" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia7" endX="473.0" endY="508.5" layoutX="62.0" layoutY="30.0" opacity="0.5" rotate="180.0" startX="-17.0" startY="21.5" stroke="RED" strokeWidth="10.0" />
+      <Line fx:id="linia8" endX="473.0" endY="508.5" layoutX="62.0" layoutY="30.0" opacity="0.5" rotate="90.0" startX="-17.0" startY="21.5" stroke="RED" strokeWidth="10.0" />
    </children>
 </AnchorPane>
