@@ -1,13 +1,49 @@
 package com.example.tic_tac_toe_fx;
 
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.shape.Line;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TicTacToeController {
+
+    Image kolko = new Image("D:\\PJATK\\Semestr_2\\GUI\\Tic_Tac_Toe_FX\\src\\main\\resources\\graphics\\0.jpg");
+
+    Image krzyzyk = new Image("D:\\PJATK\\Semestr_2\\GUI\\Tic_Tac_Toe_FX\\src\\main\\resources\\graphics\\x.jpg");
+
+    @FXML
+    ImageView siedem;
+
+    @FXML
+    ImageView osiem;
+
+    @FXML
+    ImageView dziewiec;
+
+    @FXML
+    ImageView cztery;
+
+    @FXML
+    ImageView piec;
+
+    @FXML
+    ImageView szesc;
+
+    @FXML
+    ImageView jeden;
+
+    @FXML
+    ImageView dwa;
+
+    @FXML
+    ImageView trzy;
+
+
     @FXML
     private Button przycisk1;
     @FXML
@@ -92,11 +128,19 @@ public class TicTacToeController {
             ktoryGracz = 0;
         }
     }
-
     public void ustawPrzycisk(int i){
         switch (i) {
             case 7 -> przycisk7.setOnMouseClicked(mouseEvent -> {
+
                 ustalSymbol(przycisk7);
+
+                if(ktoryGracz == 0){
+                    gracz0(siedem,przycisk7);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(siedem,przycisk7);
+                }
+
                 przycisk7.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -104,6 +148,13 @@ public class TicTacToeController {
             });
             case 8 -> przycisk8.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk8);
+
+                if(ktoryGracz == 0){
+                    gracz0(osiem,przycisk8);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(osiem,przycisk8);
+                }
                 przycisk8.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -111,6 +162,14 @@ public class TicTacToeController {
             });
             case 9 -> przycisk9.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk9);
+
+                if(ktoryGracz == 0){
+                    gracz0(dziewiec,przycisk9);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(dziewiec,przycisk9);
+                }
+
                 przycisk9.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -118,6 +177,14 @@ public class TicTacToeController {
             });
             case 4 -> przycisk4.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk4);
+
+                if(ktoryGracz == 0){
+                    gracz0(cztery,przycisk4);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(cztery,przycisk4);
+                }
+
                 przycisk4.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -125,6 +192,14 @@ public class TicTacToeController {
             });
             case 5 -> przycisk5.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk5);
+
+                if(ktoryGracz == 0){
+                    gracz0(piec,przycisk5);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(piec,przycisk5);
+                }
+
                 przycisk5.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -132,6 +207,14 @@ public class TicTacToeController {
             });
             case 6 -> przycisk6.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk6);
+
+                if(ktoryGracz == 0){
+                    gracz0(szesc,przycisk6);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(szesc,przycisk6);
+                }
+
                 przycisk6.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -139,6 +222,14 @@ public class TicTacToeController {
             });
             case 1 -> przycisk1.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk1);
+
+                if(ktoryGracz == 0){
+                    gracz0(jeden,przycisk1);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(jeden,przycisk1);
+                }
+
                 przycisk1.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -146,6 +237,14 @@ public class TicTacToeController {
             });
             case 2 -> przycisk2.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk2);
+
+                if(ktoryGracz == 0){
+                    gracz0(dwa,przycisk2);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(dwa,przycisk2);
+                }
+
                 przycisk2.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -153,6 +252,14 @@ public class TicTacToeController {
             });
             case 3 -> przycisk3.setOnMouseClicked(mouseEvent -> {
                 ustalSymbol(przycisk3);
+
+                if(ktoryGracz == 0){
+                    gracz0(trzy,przycisk3);
+                }
+                if (ktoryGracz == 1){
+                    gracz1(trzy,przycisk3);
+                }
+
                 przycisk3.setDisable(true);
                 ilerund++;
                 czyKoniec();
@@ -350,5 +457,21 @@ public class TicTacToeController {
             }
         }
 
+    }
+    public void gracz0(ImageView view, Button button){
+        view.setImage(kolko);
+        view.setFitWidth(167);
+        view.setFitHeight(167);
+        view.setPreserveRatio(true);
+        button.setGraphic(view);
+        button.setPadding(Insets.EMPTY);
+    }
+    public void gracz1(ImageView view, Button button){
+        view.setImage(krzyzyk);
+        view.setFitWidth(167);
+        view.setFitHeight(167);
+        view.setPreserveRatio(true);
+        button.setGraphic(view);
+        button.setPadding(Insets.EMPTY);
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
@@ -26,43 +27,70 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="przycisk7" mnemonicParsing="false" prefHeight="326.0" prefWidth="167.0">
+                  <Button fx:id="przycisk7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0">
                      <font>
-                        <Font size="75.0" />
+                        <Font size="1.0" />
                      </font>
+                     <graphic>
+                        <ImageView fx:id="siedem" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
                   </Button>
-                  <Button fx:id="przycisk8" mnemonicParsing="false" prefHeight="167.0" prefWidth="380.0" GridPane.columnIndex="1">
+                  <Button fx:id="przycisk8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.columnIndex="1">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk9" mnemonicParsing="false" prefHeight="278.0" prefWidth="166.0" GridPane.columnIndex="2">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="osiem" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.columnIndex="2">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk4" mnemonicParsing="false" prefHeight="396.0" prefWidth="167.0" GridPane.rowIndex="1">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="dziewiec" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.rowIndex="1">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk5" mnemonicParsing="false" prefHeight="269.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="cztery" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk6" mnemonicParsing="false" prefHeight="305.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="piec" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk1" mnemonicParsing="false" prefHeight="179.0" prefWidth="167.0" GridPane.rowIndex="2">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="szesc" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.rowIndex="2">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk2" mnemonicParsing="false" prefHeight="295.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="jeden" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
-                  <Button fx:id="przycisk3" mnemonicParsing="false" prefHeight="338.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="dwa" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="przycisk3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="167.0" prefWidth="166.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <font>
-                        <Font size="75.0" />
-                     </font></Button>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="trzy" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
                </children>
             </GridPane>
          </children>
