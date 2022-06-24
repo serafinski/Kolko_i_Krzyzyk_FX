@@ -8,7 +8,7 @@
 
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe_fx.TicTacToeController">
    <children>
-      <Label fx:id="tekst" layoutX="188.0" layoutY="7.0" text="Zaczyna krzyżyk!">
+      <Label fx:id="tekst" layoutX="188.0" layoutY="7.0" text="Zaczyna krzyżyk!" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="25.0" />
          </font>

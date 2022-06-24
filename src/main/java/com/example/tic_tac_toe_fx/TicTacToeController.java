@@ -12,9 +12,9 @@ import java.util.Arrays;
 
 public class TicTacToeController {
 
-    Image kolko = new Image("D:\\PJATK\\Semestr_2\\GUI\\Tic_Tac_Toe_FX\\src\\main\\resources\\graphics\\0.jpg");
+    Image kolko = new Image("file:src/main/resources/graphics/0.jpg");
 
-    Image krzyzyk = new Image("D:\\PJATK\\Semestr_2\\GUI\\Tic_Tac_Toe_FX\\src\\main\\resources\\graphics\\x.jpg");
+    Image krzyzyk = new Image("file:src/main/resources/graphics/x.jpg");
 
     @FXML
     ImageView siedem;
@@ -143,6 +143,7 @@ public class TicTacToeController {
 
                 przycisk7.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety7 = true;
             });
@@ -157,6 +158,7 @@ public class TicTacToeController {
                 }
                 przycisk8.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety8 = true;
             });
@@ -172,6 +174,7 @@ public class TicTacToeController {
 
                 przycisk9.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety9 = true;
             });
@@ -187,6 +190,7 @@ public class TicTacToeController {
 
                 przycisk4.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety4 = true;
             });
@@ -202,6 +206,7 @@ public class TicTacToeController {
 
                 przycisk5.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety5 = true;
             });
@@ -217,6 +222,7 @@ public class TicTacToeController {
 
                 przycisk6.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety6 = true;
             });
@@ -232,6 +238,7 @@ public class TicTacToeController {
 
                 przycisk1.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety1 = true;
             });
@@ -247,6 +254,7 @@ public class TicTacToeController {
 
                 przycisk2.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety2 = true;
             });
@@ -262,6 +270,7 @@ public class TicTacToeController {
 
                 przycisk3.setDisable(true);
                 ilerund++;
+                System.out.println(ilerund);
                 czyKoniec();
                 klikniety3 = true;
             });
@@ -294,6 +303,10 @@ public class TicTacToeController {
                 case 8 -> przycisk9.getText()+przycisk5.getText()+przycisk1.getText();
                 default -> null;
             };
+
+            if (ilerund>=9){
+                tekst.setText("\tREMIS!");
+            }
 
             if(linia.equals("XXX")){
                 koniecgry = true;
@@ -334,10 +347,6 @@ public class TicTacToeController {
                     rysujLinie(i);
                     tekst.setText("Wygrało kółko!");
             }
-            else
-                if (ilerund>9){
-                tekst.setText("REMIS!");
-                }
         }
     }
 
