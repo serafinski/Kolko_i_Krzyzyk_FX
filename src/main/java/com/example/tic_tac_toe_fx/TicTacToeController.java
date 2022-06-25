@@ -112,8 +112,6 @@ public class TicTacToeController {
     private boolean klikniety3;
 
     private boolean koniecgry;
-
-    ArrayList<Boolean> stany;
     ArrayList<Button> przyciski;
 
     public void ustalSymbol(Button przycisk){
@@ -280,7 +278,6 @@ public class TicTacToeController {
     public void initialize(){
         niePokazujLinii();
         przyciski = new ArrayList<>(Arrays.asList(przycisk1,przycisk2,przycisk3,przycisk4,przycisk5,przycisk6,przycisk7,przycisk8,przycisk9));
-        stany = new ArrayList<>(Arrays.asList(klikniety1,klikniety2,klikniety3,klikniety4,klikniety5,klikniety6,klikniety7,klikniety8,klikniety9));
 
         for (int i=1; i<= przyciski.size(); i++)
             ustawPrzycisk(i);
