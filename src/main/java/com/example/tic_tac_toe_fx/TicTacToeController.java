@@ -378,6 +378,14 @@ public class TicTacToeController {
             case 7 -> {
                 if(!klikniety7){
                     ustalSymbol(przycisk7);
+
+                    if(ktoryGracz == 0){
+                        gracz0(siedem,przycisk7);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(siedem,przycisk7);
+                    }
+
                     przycisk7.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -387,6 +395,14 @@ public class TicTacToeController {
             case 8 -> {
                 if(!klikniety8){
                     ustalSymbol(przycisk8);
+
+                    if(ktoryGracz == 0){
+                        gracz0(osiem,przycisk8);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(osiem,przycisk8);
+                    }
+
                     przycisk8.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -396,6 +412,14 @@ public class TicTacToeController {
             case 9 -> {
                 if(!klikniety9){
                     ustalSymbol(przycisk9);
+
+                    if(ktoryGracz == 0){
+                        gracz0(dziewiec,przycisk9);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(dziewiec,przycisk9);
+                    }
+
                     przycisk9.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -405,6 +429,14 @@ public class TicTacToeController {
             case 4 -> {
                 if(!klikniety4){
                     ustalSymbol(przycisk4);
+
+                    if(ktoryGracz == 0){
+                        gracz0(cztery,przycisk4);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(cztery,przycisk4);
+                    }
+
                     przycisk4.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -414,6 +446,14 @@ public class TicTacToeController {
             case 5 -> {
                 if(!klikniety5){
                     ustalSymbol(przycisk5);
+
+                    if(ktoryGracz == 0){
+                        gracz0(piec,przycisk5);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(piec,przycisk5);
+                    }
+
                     przycisk5.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -423,6 +463,14 @@ public class TicTacToeController {
             case 6 -> {
                 if(!klikniety6){
                     ustalSymbol(przycisk6);
+
+                    if(ktoryGracz == 0){
+                        gracz0(szesc,przycisk6);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(szesc,przycisk6);
+                    }
+
                     przycisk6.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -432,6 +480,14 @@ public class TicTacToeController {
             case 1 -> {
                 if(!klikniety1){
                     ustalSymbol(przycisk1);
+
+                    if(ktoryGracz == 0){
+                        gracz0(jeden,przycisk1);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(jeden,przycisk1);
+                    }
+
                     przycisk1.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -445,6 +501,14 @@ public class TicTacToeController {
             case 2 -> {
                 if(!klikniety2){
                     ustalSymbol(przycisk2);
+
+                    if(ktoryGracz == 0){
+                        gracz0(dwa,przycisk2);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(dwa,przycisk2);
+                    }
+
                     przycisk2.setDisable(true);
                     ilerund++;
                     czyKoniec();
@@ -458,6 +522,14 @@ public class TicTacToeController {
             case 3 -> {
                 if(!klikniety3){
                     ustalSymbol(przycisk3);
+
+                    if(ktoryGracz == 0){
+                        gracz0(trzy,przycisk3);
+                    }
+                    if (ktoryGracz == 1){
+                        gracz1(trzy,przycisk3);
+                    }
+
                     przycisk3.setDisable(true);
                     ilerund++;
                     czyKoniec();
