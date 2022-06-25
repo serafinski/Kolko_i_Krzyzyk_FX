@@ -10,16 +10,30 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Ładuje plik FXML,
+ * pobiera kontroler,
+ * tworzy nową scenę,
+ * ustawia obsługę zdarzenia onKeyPressed sceny,
+ * ustawia tytuł sceny,
+ * wyznacza scenę i pokazuje scenę
+ */
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-
-        //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("title_view.fxml")));
+        // Inicjacja .fxml
         FXMLLoader loader = new FXMLLoader(getClass().getResource("basicgame.fxml"));
+
+        // Ładowanie .fxml
         Parent root = loader.load();
+
+        // Pobranie kontrolera z .fxml.
         TicTacToeController controller = loader.getController();
+
+        // Stworzenie nowej sceny
         Scene scene = new Scene(root,575,600);
 
+        // Lambda służąca do ustalenia Numpad'a.
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -37,12 +51,18 @@ public class Main extends Application {
             }
         });
 
+        //Ustawienie tytułu sceny.
         stage.setTitle("Kółko i krzyżyk!");
 
+        // Ustawienie tego "co wystawia" scena.
         stage.setScene(scene);
+        //Wyświetlenie sceny
         stage.show();
     }
 
+    /**
+     * Uruchomienie programu
+     */
     public static void main(String[] args) {
         launch();
     }

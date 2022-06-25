@@ -114,6 +114,11 @@ public class TicTacToeController {
     private boolean koniecgry;
     ArrayList<Button> przyciski;
 
+    /**
+     * Ustawia symbol danego przycisku, który został kliknięty.
+     *
+     * @param przycisk przycisk, który został kliknięty
+     */
     public void ustalSymbol(Button przycisk){
         if(ktoryGracz == 0){
             przycisk.setText("X");
@@ -126,6 +131,11 @@ public class TicTacToeController {
             ktoryGracz = 0;
         }
     }
+    /**
+     * Ustawianie zdarzenia onMouseClicked dla numeru z numerem i
+     *
+     * @param i number of the button
+     */
     public void ustawPrzycisk(int i){
         switch (i) {
             case 7 -> przycisk7.setOnMouseClicked(mouseEvent -> {
@@ -275,6 +285,9 @@ public class TicTacToeController {
         }
     }
 
+    /**
+     * Ustawienie przycisków i linii
+     */
     public void initialize(){
         niePokazujLinii();
         przyciski = new ArrayList<>(Arrays.asList(przycisk1,przycisk2,przycisk3,przycisk4,przycisk5,przycisk6,przycisk7,przycisk8,przycisk9));
@@ -287,6 +300,9 @@ public class TicTacToeController {
         });
     }
 
+    /**
+     * Funkcja sprawdzająca, czy jest zwycięzca.
+     */
     public void czyKoniec(){
         for(int i=1; i < 9;i++){
             String linia = switch (i){
@@ -301,45 +317,32 @@ public class TicTacToeController {
                 default -> null;
             };
 
+            //Jeżeli jest 9 lub więcej rund to remis!
             if (ilerund>=9){
                 tekst.setText("\tREMIS!");
             }
 
+            //Jak wygra X
             if(linia.equals("XXX")){
                 koniecgry = true;
                 przyciski.forEach(przycisk -> {
                     przycisk.setDisable(true);
                 });
 
-                klikniety1 = true;
-                klikniety2 = true;
-                klikniety3 = true;
-                klikniety4 = true;
-                klikniety5 = true;
-                klikniety6 = true;
-                klikniety7 = true;
-                klikniety8 = true;
-                klikniety9 = true;
+                wszystkieklikniete();
 
                 rysujLinie(i);
                 tekst.setText("Wygrał krzyżyk!");
             }
             else
+                //Jak wygra O
                 if(linia.equals("OOO")){
                     koniecgry = true;
                     przyciski.forEach(przycisk -> {
                         przycisk.setDisable(true);
                     });
 
-                    klikniety1 = true;
-                    klikniety2 = true;
-                    klikniety3 = true;
-                    klikniety4 = true;
-                    klikniety5 = true;
-                    klikniety6 = true;
-                    klikniety7 = true;
-                    klikniety8 = true;
-                    klikniety9 = true;
+                    wszystkieklikniete();
 
                     rysujLinie(i);
                     tekst.setText("Wygrało kółko!");
@@ -347,6 +350,9 @@ public class TicTacToeController {
         }
     }
 
+    /**
+     * Funkcja ustalająca widoczność wszystkich linii na false.
+     */
     public void niePokazujLinii(){
         linia1.setVisible(false);
         linia2.setVisible(false);
@@ -358,6 +364,10 @@ public class TicTacToeController {
         linia8.setVisible(false);
     }
 
+    /**
+     * W zależności od wartości sprawia, że podana linia jest widoczna.
+     * @param i numer linii, który ma zostać narysowany
+     */
     public void rysujLinie(int i){
         switch (i){
             case 1 -> linia1.setVisible(true);
@@ -370,6 +380,11 @@ public class TicTacToeController {
             case 8 -> linia8.setVisible(true);
         }
     }
+    /**
+     * Switch sprawdzający który przycisk został kliknięty i wywołujący odpowiednie funkcje.
+     *
+     * @param i numer przycisku
+     */
     public void klawisze(int i){
         switch (i) {
             case 7 -> {
@@ -536,6 +551,12 @@ public class TicTacToeController {
         }
 
     }
+    /**
+     * Ustawienie obrazu na przycisku do symbolu gracza.
+     *
+     * @param view ImageView
+     * @param button przycisk, który zostanie zmieniony
+     */
     public void gracz0(ImageView view, Button button){
         view.setImage(kolko);
         view.setFitWidth(167);
@@ -551,5 +572,19 @@ public class TicTacToeController {
         view.setPreserveRatio(true);
         button.setGraphic(view);
         button.setPadding(Insets.EMPTY);
+    }
+    /**
+     * Zmienia stan zmiennych kliknięty, na true
+     */
+    public void wszystkieklikniete(){
+        klikniety1 = true;
+        klikniety2 = true;
+        klikniety3 = true;
+        klikniety4 = true;
+        klikniety5 = true;
+        klikniety6 = true;
+        klikniety7 = true;
+        klikniety8 = true;
+        klikniety9 = true;
     }
 }
