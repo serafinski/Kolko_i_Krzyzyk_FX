@@ -111,7 +111,8 @@ public class TicTacToeController {
 
     private boolean klikniety3;
 
-    private boolean koniecgry;
+    private boolean remis;
+
     ArrayList<Button> przyciski;
 
     /**
@@ -151,7 +152,7 @@ public class TicTacToeController {
 
                 przycisk7.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety7 = true;
             });
@@ -166,7 +167,7 @@ public class TicTacToeController {
                 }
                 przycisk8.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety8 = true;
             });
@@ -182,7 +183,7 @@ public class TicTacToeController {
 
                 przycisk9.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety9 = true;
             });
@@ -198,7 +199,7 @@ public class TicTacToeController {
 
                 przycisk4.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety4 = true;
             });
@@ -214,7 +215,7 @@ public class TicTacToeController {
 
                 przycisk5.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety5 = true;
             });
@@ -230,7 +231,7 @@ public class TicTacToeController {
 
                 przycisk6.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety6 = true;
             });
@@ -246,7 +247,7 @@ public class TicTacToeController {
 
                 przycisk1.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety1 = true;
             });
@@ -262,7 +263,7 @@ public class TicTacToeController {
 
                 przycisk2.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety2 = true;
             });
@@ -278,7 +279,7 @@ public class TicTacToeController {
 
                 przycisk3.setDisable(true);
                 ilerund++;
-                System.out.println(ilerund);
+                //System.out.println(ilerund);
                 czyKoniec();
                 klikniety3 = true;
             });
@@ -317,27 +318,12 @@ public class TicTacToeController {
                 default -> null;
             };
 
-            //Jeżeli jest 9 lub więcej rund to remis!
-            if (ilerund>=9){
+            if (ilerund == 9 && !linia.equals("XXX")){
                 tekst.setText("\tREMIS!");
             }
-
-            //Jak wygra X
-            if(linia.equals("XXX")){
-                koniecgry = true;
-                przyciski.forEach(przycisk -> {
-                    przycisk.setDisable(true);
-                });
-
-                wszystkieklikniete();
-
-                rysujLinie(i);
-                tekst.setText("Wygrał krzyżyk!");
-            }
-            else
-                //Jak wygra O
-                if(linia.equals("OOO")){
-                    koniecgry = true;
+            else{
+                //Jak wygra X
+                if(linia.equals("XXX")){
                     przyciski.forEach(przycisk -> {
                         przycisk.setDisable(true);
                     });
@@ -345,7 +331,20 @@ public class TicTacToeController {
                     wszystkieklikniete();
 
                     rysujLinie(i);
-                    tekst.setText("Wygrało kółko!");
+                    tekst.setText("Wygrał krzyżyk!");
+                }
+                else
+                    //Jak wygra O
+                    if(linia.equals("OOO")){
+                        przyciski.forEach(przycisk -> {
+                            przycisk.setDisable(true);
+                        });
+
+                        wszystkieklikniete();
+
+                        rysujLinie(i);
+                        tekst.setText("Wygrało kółko!");
+                    }
             }
         }
     }
@@ -505,10 +504,6 @@ public class TicTacToeController {
                     czyKoniec();
                 }
                 klikniety1 = true;
-
-                if(koniecgry){
-                    przycisk1.setDisable(true);
-                }
             }
             case 2 -> {
                 if(!klikniety2){
@@ -526,10 +521,6 @@ public class TicTacToeController {
                     czyKoniec();
                 }
                 klikniety2 = true;
-
-                if(koniecgry){
-                    przycisk2.setDisable(true);
-                }
             }
             case 3 -> {
                 if(!klikniety3){
