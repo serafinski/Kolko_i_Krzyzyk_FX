@@ -317,8 +317,8 @@ public class TicTacToeController {
                 case 8 -> przycisk9.getText()+przycisk5.getText()+przycisk1.getText();
                 default -> null;
             };
-
-            if (ilerund == 9 && !linia.equals("XXX")){
+            System.out.println(linia);
+            if (ilerund == 9 && i==7 && !linia.equals("XXX")){
                 tekst.setText("\tREMIS!");
             }
             else{
