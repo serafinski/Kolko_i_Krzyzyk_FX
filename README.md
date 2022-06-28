@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tomertin/Tic_Tac_Toe_FX/">
-    <img src="src/main/resources/graphics/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="src/main/resources/graphics/logo.jpg" alt="Logo" width="150" height="150">
   </a>
 
 <h3 align="center">Kółko i krzyżyk </h3>
@@ -37,14 +37,16 @@
 <!-- ABOUT THE PROJECT -->
 ## O projekcie
 
-![screely-1656449804621](https://user-images.githubusercontent.com/88508650/176288960-033357ce-7395-4c08-a29d-7242e9507bf3.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/88508650/176302326-e9b210dc-41c5-4856-abbe-c299e6ca7304.jpg">
+</p>
 
 - Gra została stworzona z myślą dla 2 graczy.
 - Do ustawienia wartości X lub O użyto przycisków wraz ze zdjęciem/ikoną na nich *(ImageView)*.
 - W grę można grać zarówno za pomocą myszki jak i klawiatury numerycznej (Numpad'a).
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">powrót do początku</a>)</p>
 
 
 
@@ -52,7 +54,7 @@
 
 * [JavaFX](https://openjfx.io/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">powrót do początku</a>)</p>
 
 
 <!-- LICENSE -->
@@ -60,7 +62,7 @@
 
 Dystrybucja na podstawie licencji MIT. Sprawdź `LICENSE` po więcej informacji.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">powrót do początku</a>)</p>
 
 
 
@@ -71,4 +73,4 @@ Tomasz Serafiński - work.serafinski@gmail.com
 
 Link do projektu: [https://github.com/tomertin/Tic_Tac_Toe_FX](https://github.com/tomertin/Tic_Tac_Toe_FX/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">powrót do początku</a>)</p>
