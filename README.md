@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/tomertin/Tic_Tac_Toe_FX/">
+  <a href="https://github.com/tomertin/Kolko_i_Krzyzyk_FX">
     <img src="src/main/resources/graphics/logo.jpg" alt="Logo" width="150" height="150">
   </a>
 
@@ -71,6 +71,6 @@ Dystrybucja na podstawie licencji MIT. Sprawdź `LICENSE` po więcej informacji.
 
 Tomasz Serafiński - work.serafinski@gmail.com
 
-Link do projektu: [https://github.com/tomertin/Tic_Tac_Toe_FX](https://github.com/tomertin/Tic_Tac_Toe_FX/)
+Link do projektu: [https://github.com/tomertin/Kolko_i_Krzyzyk_FX](https://github.com/tomertin/Kolko_i_Krzyzyk_FX)
 
 <p align="right">(<a href="#top">powrót do początku</a>)</p>
