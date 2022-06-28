@@ -58,7 +58,7 @@
 <!-- LICENSE -->
 ## Licencja
 
-Dystrybucja na podstawie licencji MIT. Sprawdź `LICENSE.txt` po więcej informacji.
+Dystrybucja na podstawie licencji MIT. Sprawdź `LICENSE` po więcej informacji.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
